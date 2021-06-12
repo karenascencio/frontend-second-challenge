@@ -22,30 +22,79 @@
             </aside>
             <!--section-->
             <section class="col-md-8 col-lg-6 border border-primary d-flex justify-content-between align-items-baseline">
-                <div>
+                <!--div style="font-weight: bold;">
                     Posts
-                </div>
-                <div class="ml-auto">
-                    <ul class="nav d-flex mb-3">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Feed</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Week</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Month</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Year</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Infinity</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Latest</a>
-                        </li>
-                    </ul>
+                </di-->
+                <div class="">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab-home" role="tablist">
+                            <a class="nav-link active" id="nav-home-feed" data-toggle="tab" href="#nav-feed" role="tab" aria-controls="nav-feed" aria-selected="true">Feed</a>
+                            <a class="nav-link" id="nav-home-week" data-toggle="tab" href="#nav-week" role="tab" aria-controls="nav-week" aria-selected="false">Week</a>
+                            <a class="nav-link" id="nav-home-month" data-toggle="tab" href="#nav-month" role="tab" aria-controls="nav-month" aria-selected="false">Month</a>
+                            <a class="nav-link" id="nav-home-year" data-toggle="tab" href="#nav-year" role="tab" aria-controls="nav-year" aria-selected="false">Year</a>
+                            <a class="nav-link" id="nav-home-infinity" data-toggle="tab" href="#nav-infinity" role="tab" aria-controls="nav-infinity" aria-selected="false">infinity</a>
+                            <a class="nav-link" id="nav-home-latest" data-toggle="tab" href="#nav-latest" role="tab" aria-controls="nav-latest" aria-selected="false">Latest</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <!--feed-->
+                        <div class="tab-pane fade show active" 
+                            id="nav-feed" 
+                            role="tabpanel" 
+                            aria-labelledby="nav-home-feed">
+                            nav-feed...
+                            <div class="card mb-3 d-flex">
+                                <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--iRPaAcvM--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/io1slbtk9y0keksugwy3.jpg" class="card-img-top" alt=". . .">
+                                <div class="card-body">
+                                    <h5 class="card-title" style="font-size:">How I got 1000 folowers on DEV</h5>
+                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>                              
+                            <div class="card mb-3 d-flex">
+                                <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Week-->
+                        <div class="tab-pane fade" 
+                            id="nav-week" 
+                            role="tabpanel" 
+                            aria-labelledby="nav-home-week">
+                            nav-week...
+                        </div>
+                        <!--Month-->
+                        <div class="tab-pane fade" 
+                            id="nav-month" 
+                            role="tabpanel" 
+                            aria-labelledby="nav-home-month">
+                            nav-month...
+                        </div>
+                        <!--Year-->
+                        <div class="tab-pane fade" 
+                            id="nav-year" 
+                            role="tabpanel" 
+                            aria-labelledby="nav-home-year">
+                            nav-year...
+                        </div>
+                        <!--infinity-->
+                        <div class="tab-pane fade" 
+                            id="nav-infinity" 
+                            role="tabpanel" 
+                            aria-labelledby="nav-home-infinity">
+                            nav-infinity...
+                        </div>
+                        <!--Latest-->
+                        <div class="tab-pane fade" 
+                            id="nav-latest" 
+                            role="tabpanel" 
+                            aria-labelledby="nav-home-latest">
+                            nav-latest...
+                        </div>
+                    </div>
                 </div>
             </section>
             <!--right aside-->
