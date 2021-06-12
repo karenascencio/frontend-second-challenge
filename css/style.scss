@@ -23,11 +23,18 @@ $colors:(
     background-color: $bg-color;
 }
 
-// btn{
-//     @include  button-style(, , -color)
-// }
+header{
 
-// -md
+}
+
+main{
+
+}
+
+footer{
+
+}
+
 @media only screen and (min-width:768px){
     header{
 
