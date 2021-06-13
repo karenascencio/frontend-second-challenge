@@ -1,5 +1,11 @@
 @import url(‘https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap’);
 
+$side-padding:(
+    "mobile": .75rem,
+    "ipad":.5rem,
+    "desktop":6rem
+);
+
 $colors:(
     "blue":#3c48df, //Button, links
     "gray":#eef0f1, //Background
