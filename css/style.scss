@@ -24,11 +24,56 @@ $colors:(
 }
 
 header{
+    height: 56px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 1px solid black;
+    .header-logo{
+        .burger{
+            height: 24px;
+            margin: 0 .75rem;
+        }
+        a{
+            height: 40px;
+            width: 50px;
+            .logo{
+                height: 40px;
+                width: 50px;
+                margin: 0;
+                // background-color: black;
 
+            }
+        }
+    }
+    .header-right{
+        a{
+            
+            img{
+                height: 24px;
+                margin: 0 .75rem;
+            }
+        }
+
+        .dropdown{ 
+            button{
+                width: 32px;
+                height: 32px;
+                margin: 0 .75rem;
+                border: none;
+                background-image: url("../img/logged-in-avatar.webp");
+                background-size: contain;
+                &::after{
+                    display: none;
+                }
+        }
+        }
+    }
 }
 
 main{
-
+    margin-top: 56px;
 }
 
 footer{

@@ -39,4 +39,51 @@
 .bg-darkest-gray {
   background-color: #64707d;
 }
+
+header {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border: 1px solid black;
+}
+
+header .header-logo .burger {
+  height: 24px;
+  margin: 0 .75rem;
+}
+
+header .header-logo a {
+  height: 40px;
+  width: 50px;
+}
+
+header .header-logo a .logo {
+  height: 40px;
+  width: 50px;
+  margin: 0;
+}
+
+header .header-right a img {
+  height: 24px;
+  margin: 0 .75rem;
+}
+
+header .header-right .dropdown button {
+  width: 32px;
+  height: 32px;
+  margin: 0 .75rem;
+  border: none;
+  background-image: url("../img/logged-in-avatar.webp");
+  background-size: contain;
+}
+
+header .header-right .dropdown button::after {
+  display: none;
+}
+
+main {
+  margin-top: 56px;
+}
 /*# sourceMappingURL=style.css.map */
