@@ -46,6 +46,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9999;
   border: 1px solid black;
   padding: 0 0.75rem;
 }
@@ -92,5 +93,65 @@ header .header-right .dropdown button::after {
 
 main {
   margin-top: 56px;
+}
+
+footer {
+  padding: 1.25rem;
+}
+
+footer .footer-inner {
+  max-width: 768px;
+  margin: auto;
+  text-align: center;
+}
+
+footer .footer-inner a {
+  color: black;
+}
+
+footer .footer-inner a:hover {
+  color: #323ebe;
+  text-decoration: none;
+}
+
+footer .footer-inner .site-links {
+  text-align: center;
+}
+
+footer .footer-inner .site-links a {
+  padding: .5rem;
+  display: inline-block;
+}
+
+footer .footer-inner .site-links a:last-child {
+  font-weight: bold;
+}
+
+footer .footer-inner .social {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+footer .footer-inner .social a {
+  margin: 0 .5rem;
+}
+
+footer .footer-inner hr {
+  width: 20%;
+  margin: .5rem auto;
+}
+
+footer .footer-inner p {
+  font-size: 14px;
+  text-align: center;
+  color: #64707d;
+}
+
+footer .footer-inner p a {
+  font-weight: bold;
+}
+
+footer .footer-inner p:nth-of-type(2) {
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
