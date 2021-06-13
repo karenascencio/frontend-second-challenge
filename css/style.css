@@ -39,4 +39,119 @@
 .bg-darkest-gray {
   background-color: #64707d;
 }
+
+header {
+  height: 56px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  border: 1px solid black;
+  padding: 0 0.75rem;
+}
+
+header .header-logo .burger {
+  height: 24px;
+  margin: 0 .75rem 0 .25rem;
+}
+
+header .header-logo a {
+  height: 40px;
+  width: 50px;
+}
+
+header .header-logo a .logo {
+  height: 40px;
+  width: 50px;
+  margin: 0;
+}
+
+header .search-bar {
+  max-width: 420px;
+  background-color: #f9fafa;
+  border-color: #64707d;
+}
+
+header .header-right a img {
+  height: 24px;
+  margin: 0 .75rem;
+}
+
+header .header-right .dropdown button {
+  width: 32px;
+  height: 32px;
+  margin-left: .75rem;
+  border: none;
+  background-image: url("../img/logged-in-avatar.webp");
+  background-size: contain;
+}
+
+header .header-right .dropdown button::after {
+  display: none;
+}
+
+main {
+  margin-top: 56px;
+}
+
+footer {
+  padding: 1.25rem;
+}
+
+footer .footer-inner {
+  max-width: 768px;
+  margin: auto;
+  text-align: center;
+}
+
+footer .footer-inner a {
+  color: black;
+}
+
+footer .footer-inner a:hover {
+  color: #323ebe;
+  text-decoration: none;
+}
+
+footer .footer-inner .site-links {
+  text-align: center;
+}
+
+footer .footer-inner .site-links a {
+  padding: .5rem;
+  display: inline-block;
+}
+
+footer .footer-inner .site-links a:last-child {
+  font-weight: bold;
+}
+
+footer .footer-inner .social {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+footer .footer-inner .social a {
+  margin: 0 .5rem;
+}
+
+footer .footer-inner hr {
+  width: 20%;
+  margin: .5rem auto;
+}
+
+footer .footer-inner p {
+  font-size: 14px;
+  text-align: center;
+  color: #64707d;
+}
+
+footer .footer-inner p a {
+  font-weight: bold;
+}
+
+footer .footer-inner p:nth-of-type(2) {
+  margin: 0;
+}
 /*# sourceMappingURL=style.css.map */
