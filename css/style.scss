@@ -1,9 +1,9 @@
 @import url(‘https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap’);
 
 $side-padding:(
-    "mobile": .75rem,
-    "ipad":.5rem,
-    "desktop":6rem
+    "mobile": .75rem, 
+    "ipad":.5rem, // md
+    "desktop":1rem //xl
 );
 
 $colors:(
@@ -36,10 +36,12 @@ header{
     top: 0;
     left: 0;
     border: 1px solid black;
+    padding: 0 map-get($side-padding, "mobile");
     .header-logo{
         .burger{
             height: 24px;
-            margin: 0 .75rem;
+
+            margin: 0 .75rem 0 .25rem ;
         }
         a{
             height: 40px;
@@ -52,6 +54,11 @@ header{
 
             }
         }
+    }
+    .search-bar{
+        max-width:420px;
+        background-color:#f9fafa;
+        border-color: map-get($colors, "darkest-gray");
     }
     .header-right{
         a{
@@ -66,7 +73,7 @@ header{
             button{
                 width: 32px;
                 height: 32px;
-                margin: 0 .75rem;
+                margin-left: .75rem ;
                 border: none;
                 background-image: url("../img/logged-in-avatar.webp");
                 background-size: contain;
@@ -99,8 +106,8 @@ footer{
     }
 }
 
-// -lg
-@media only screen and (min-width:992px){
+// -xl
+@media only screen and (min-width:1200px){
     header{
 
     }

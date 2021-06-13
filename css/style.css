@@ -47,11 +47,12 @@ header {
   top: 0;
   left: 0;
   border: 1px solid black;
+  padding: 0 0.75rem;
 }
 
 header .header-logo .burger {
   height: 24px;
-  margin: 0 .75rem;
+  margin: 0 .75rem 0 .25rem;
 }
 
 header .header-logo a {
@@ -65,6 +66,12 @@ header .header-logo a .logo {
   margin: 0;
 }
 
+header .search-bar {
+  max-width: 420px;
+  background-color: #f9fafa;
+  border-color: #64707d;
+}
+
 header .header-right a img {
   height: 24px;
   margin: 0 .75rem;
@@ -73,7 +80,7 @@ header .header-right a img {
 header .header-right .dropdown button {
   width: 32px;
   height: 32px;
-  margin: 0 .75rem;
+  margin-left: .75rem;
   border: none;
   background-image: url("../img/logged-in-avatar.webp");
   background-size: contain;
