@@ -100,15 +100,44 @@ header {
   padding: 0 0.75rem;
 }
 
-header .header-logo .burger-dropdown {
+header .header-logo .burger-dropdown .burger-button {
   margin: 0 .75rem 0 .25rem;
   height: 24px;
   background-image: url("../img/burger-icon.svg");
   background-repeat: no-repeat;
 }
 
-header .header-logo .burger-dropdown::after {
+header .header-logo .burger-dropdown .burger-button::after {
   display: none;
+}
+
+header .header-logo .burger-dropdown .burger-menu {
+  border-radius: 0;
+  position: fixed !important;
+  -webkit-transform: none !important;
+          transform: none !important;
+  margin: 0;
+  padding: 0;
+  width: 85vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+}
+
+header .header-logo .burger-dropdown .burger-menu .burger-menu-header {
+  height: 55px;
+}
+
+header .header-logo .burger-dropdown .burger-menu .burger-menu-header img {
+  height: 24px;
+}
+
+header .header-logo .burger-dropdown .burger-menu hr {
+  margin: 0;
+}
+
+header .header-logo .burger-dropdown .burger-menu .main-links a {
+  margin: .5rem 1.25rem;
 }
 
 header .header-logo a {

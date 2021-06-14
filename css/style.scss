@@ -55,6 +55,8 @@ $colors:(
 }
 ///////////////////////////
 
+
+
 header{
     height: 56px;
     width: 100%;
@@ -66,14 +68,40 @@ header{
     padding: 0 map-get($side-padding, "mobile");
     .header-logo{
         .burger-dropdown{
-            margin: 0 .75rem 0 .25rem ;
-            height: 24px;
-            background-image: url("../img/burger-icon.svg");
-            background-repeat: no-repeat;
-            &::after{
-                display: none;
-            }
+            .burger-button{
+                margin: 0 .75rem 0 .25rem ;
+                height: 24px;
+                background-image: url("../img/burger-icon.svg");
+                background-repeat: no-repeat;
+                &::after{
+                    display: none;
                 }
+            }
+            .burger-menu{
+                border-radius: 0;
+                position:fixed !important;
+                transform:none !important;
+                margin: 0;
+                padding: 0;
+                width: 85vw;
+                height: 100vh;
+                top:0px;
+                left: 0px;
+                .burger-menu-header{
+                    height: 55px;
+                    img{
+                        height: 24px;
+                    }
+                }
+                hr{
+                    margin: 0;
+                }
+                .main-links a{
+                    margin: .5rem 1.25rem;
+                }
+            }
+        }
+
         a{
             height: 40px;
             width: 50px;
