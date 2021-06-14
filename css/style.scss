@@ -15,6 +15,7 @@ $colors:(
     "pink": #ffc0cb,
     "salmon":#ffd5c0,
     "purple": #d5c0ff,
+    "black": #08090a,
 );
 
 @each $name, $color in $colors{
@@ -150,6 +151,17 @@ header{
     }
 }
 
+.main.post{
+    a{
+        color: black;
+        &:hover{
+            color: #323ebe;
+            text-decoration: none;
+        }
+    }
+}
+
+
 footer{
     padding: 1.25rem;
     .footer-inner{
@@ -227,6 +239,8 @@ footer{
 
     }
 }
+
+
 
 .gris{
     background-color: #d2d6db;
