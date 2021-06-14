@@ -64,6 +64,14 @@
   background-color: #d5c0ff;
 }
 
+.color-black {
+  color: #08090a;
+}
+
+.bg-black {
+  background-color: #08090a;
+}
+
 .aside-menu-item {
   display: block;
   padding: .5rem;
@@ -219,6 +227,15 @@ header .header-right .dropdown .dropdown-menu small {
   font-size: 1rem;
   font-weight: bold;
   margin: 0;
+}
+
+.main.post a {
+  color: black;
+}
+
+.main.post a:hover {
+  color: #323ebe;
+  text-decoration: none;
 }
 
 footer {

@@ -36,7 +36,7 @@
         </nav>
     </header>
     <!--main-->
-    <main class="container">
+    <main class="container-fluid main-post bg-gray">
         <!--left div-->
         <div class="interactions-container">
             left div fixed images links heart
@@ -44,118 +44,203 @@
         <div class="row">
             <!--section-->
             <section class="col-12 col-md-12 col-lg-9 m-0 p-0">
-                <article class="post-section">
+                <article class="post-section mb-3 bg-white">
                     <img class="w-100" src="../img/minimal-cover-post.webp" alt="post-pic">
-                    <h1 class="pl-2">
-                        Minimal Cover
-                    </h1>
-                    <div class="languages-hashtags pl-2">
-                        <span class="bg-pink rounded">#database</span>
-                        <span class="bg-salmon rounded">#computerscience</span>
-                        <span class="bg-purple rounded" >#helpmeimdying</span>
+                    <div class="post-text pl-3 pr-3 pl-m-4 pr-m-4 pl-xl-5 pr-xl-5">
+                        <h1 class="pt-3">
+                            Minimal Cover
+                        </h1>
+                        <div class="languages-hashtags">
+                            <span class="bg-pink rounded">#database</span>
+                            <span class="bg-salmon rounded">#computerscience</span>
+                            <span class="bg-purple rounded" >#helpmeimdying</span>
+                        </div>
+                        <div class="post-info d-flex pt-3">
+                            <img class="poster-pfp rounded-circle mr-1" width="32px" src="../img/heba-pfp.jpeg" alt="heba">
+                            <span class="pr-2 mt-1"><b>hebaShakeel</b></span>
+                            <p class="card-text"><small class="text-muted">13 jun. ·1 min read</small></p>
+                        </div>
+                        <p class="pt-3 pb-3">
+                            A minimal cover is a simplified and reduced version of the given set of functional dependencies. <br />
+                            Since it is a reduced version, it is also called as <b>Irreducible set</b>. <br />
+                            It is also called as <b>Canonical Cover</b>. <br />
+                            <br />
+                            <b>Steps to Find Minimal Cover:</b> <br />
+                            <br />
+                            <b>1. Split the right-hand attributes of all FDs.</b> <br />
+                            <b>Example</b><br />
+                            A->XY => A->X, A->Y <br />
+                            <br />
+                            <b>2. Remove all redundant FDs.</b><br />
+                            <b>Example</b><br />
+                            { A->B, B->C, A->C }<br />
+                            Here A->C is redundant since it can already be achieved using the Transitivity Property.<br />
+                            <br />
+                            <b>3. Find the Extraneous attribute and remove it.</b><br />
+                            <b>Example</b><br />
+                            AB->C, either A or B or none can be extraneous.<br />
+                            If A closure contains B then B is extraneous and it can be removed.<br />
+                            If B closure contains A then A is extraneous and it can be removed.<br />
+                            <br />
+                            <b>Example 1</b><br />
+                            Minimize {A->C, AC->D, E->H, E->AD}<br />
+                            <br />
+                            <b>Step 1:</b> {A->C, AC->D, E->H, E->A, E->D}<br />
+                            <br />
+                            <b>Step 2:</b> {A->C, AC->D, E->H, E->A}<br />
+                            Here Redundant FD : {E->D}<br />
+                            <br />
+                            <b>Step 3:</b> {AC->D}<br />
+                            {A}+ = {A,C}<br />
+                            Therefore C is extraneous and is removed.<br />
+                            {A->D}<br />
+                            <br />
+                            Minimal Cover = {A->C, A->D, E->H, E->A}<br />
+                            <br />
+                            <b>Example 2</b><br />
+                            Minimize {AB->C, D->E, AB->E, E->C}<br />
+                            <br />
+                            <b>Step 1:</b> {AB->C, D->E, AB->E, E->C}<br />
+                            <br />
+                            <b>Step 2:</b> {D->E, AB->E, E->C}<br />
+                            Here Redundant FD = {AB->C}<br />
+                            <br />
+                            <b>Step 3:</b> {AB->E}<br />
+                            {A}+ = {A}<br />
+                            {B}+ = {B}<br />
+                            There is no extraneous attribute.<br />
+                            <br />
+                            Therefore, Minimal cover = {D->E, AB->E, E->C}<br />
+                            <br />
+                        </p>
                     </div>
-                    <div class="post-info d-flex pt-3 pl-2">
-                        <img class="poster-pfp rounded-circle mr-1" width="32px" src="../img/heba-pfp.jpeg" alt="heba">
-                        <span class="pr-2"><b>hebaShakeel</b></span>
-                        <p class="card-text"><small class="text-muted">13 jun. ·1 min read</small></p>
-                    </div>
-                    <p class="pt-3 pl-2 pr-2">
-                        A minimal cover is a simplified and reduced version of the given set of functional dependencies. <br />
-                        Since it is a reduced version, it is also called as <b>Irreducible set</b>. <br />
-                        It is also called as <b>Canonical Cover</b>. <br />
-                        <br />
-                        <b>Steps to Find Minimal Cover:</b> <br />
-                        <br />
-                        <b>1. Split the right-hand attributes of all FDs.</b> <br />
-                        <b>Example</b><br />
-                        A->XY => A->X, A->Y <br />
-                        <br />
-                        <b>2. Remove all redundant FDs.</b><br />
-                        <b>Example</b><br />
-                        { A->B, B->C, A->C }<br />
-                        Here A->C is redundant since it can already be achieved using the Transitivity Property.<br />
-                        <br />
-                        <b>3. Find the Extraneous attribute and remove it.</b><br />
-                        <b>Example</b><br />
-                        AB->C, either A or B or none can be extraneous.<br />
-                        If A closure contains B then B is extraneous and it can be removed.<br />
-                        If B closure contains A then A is extraneous and it can be removed.<br />
-                        <br />
-                        <b>Example 1</b><br />
-                        Minimize {A->C, AC->D, E->H, E->AD}<br />
-                        <br />
-                        <b>Step 1:</b> {A->C, AC->D, E->H, E->A, E->D}<br />
-                        <br />
-                        <b>Step 2:</b> {A->C, AC->D, E->H, E->A}<br />
-                        Here Redundant FD : {E->D}<br />
-                        <br />
-                        <b>Step 3:</b> {AC->D}<br />
-                        {A}+ = {A,C}<br />
-                        Therefore C is extraneous and is removed.<br />
-                        {A->D}<br />
-                        <br />
-                        Minimal Cover = {A->C, A->D, E->H, E->A}<br />
-                        <br />
-                        <b>Example 2</b><br />
-                        Minimize {AB->C, D->E, AB->E, E->C}<br />
-                        <br />
-                        <b>Step 1:</b> {AB->C, D->E, AB->E, E->C}<br />
-                        <br />
-                        <b>Step 2:</b> {D->E, AB->E, E->C}<br />
-                        Here Redundant FD = {AB->C}<br />
-                        <br />
-                        <b>Step 3:</b> {AB->E}<br />
-                        {A}+ = {A}<br />
-                        {B}+ = {B}<br />
-                        There is no extraneous attribute.<br />
-                        <br />
-                        Therefore, Minimal cover = {D->E, AB->E, E->C}<br />
-                        <br />
-                    </p>
                 </article>
-                <article class="discussion-section">
-                    <div class="discussion-title-button">
-                        <h2></h2>
-                        <button></button>
+                <article class="discussion-section pl-3 pr-3 pt-3 pb-3 mt-5 pl-m-4 pr-m-4 pl-xl-5 pr-xl-5 bg-white rounded">
+                    <div class="discussion-title-button d-flex justify-content-between">
+                        <h2>Discussion (1)</h2>
+                        <button type="button" class="btn btn-outline-secondary">Subscribe</button>
                     </div>
-                    <div class="discussion-comment-box">
-                        <img src="" alt="">
-                        <div class="input-group">
-                            <textarea class="form-control" placeholder="Add to the discussion"></textarea>
-                        </div>
-                        <div class="discussion-toolbar">
-                            <img src="" alt="">
-                            <img src="" alt="">
-                            <img src="" alt="">
-                        </div>
+                    <div class="discussion-comment-box d-flex mt-3">
+                        <img class="rounded-circle mr-2" width="24px" height="24px" src="../img/logged-in-avatar.webp" alt="chava">
                         <div>
-                            <button></button>
-                            <button></button>
+                            <div class="input-group">
+                                <textarea class="form-control" placeholder="Add to the discussion"></textarea>
+                            </div>
+                            <div class="mt-2">
+                                <button type="button">Submit</button>
+                                <button type="button">Preview</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="comment-box row">
-                        <div class="pfp-collapse-images">
-                            <img src="" alt="">
-                            <img src="" alt="">
+                    <div class="comment-box pt-3 row">
+                        <div class="pfp-collapse-images col-1 pr-md-0 d-flex flex-column">
+                            <img class="rounded-circle" width="24px" height="24px" src="../img/comment-person.png" alt="karen">
+                            <img class="mt-1" width="24px" height="24px" src="/img/collapsed-icon.svg" alt="collapsed">
                         </div>
-                        <div class="comment-info">
-                            <div>
-                                <p class=""></p>
+                        <div class="comment-info col-11 pl-md-0">
+                            <div class="card">
+                                <div class="card-body pt-1">
+                                    <div class="comment-person-info d-flex">
+                                        <p class="card-text"><small class="text-muted"> <b>Sylvia Snowed</b></small></p>
+                                        <p class="card-text pl-1"><small class="text-muted"> June 12</small></p>
+                                    </div>
+                                    <p>
+                                        Was this revelated to you in a dream?
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="comment-interaction">
+                                <button type="button" class="btn btn-light bg-white"><img src="/img/heart-icon.svg" alt="heart" />2 likes</button>
+                                <button type="button" class="btn btn-light bg-white"><img src="/img/comments-icon.svg" alt="comment" />0</button>
                             </div>
                         </div>
                     </div>
                 </article>
-                <article class="readnext-section">
-
+                <article class="readnext-section pl-3 pr-3 pt-3 pb-3 mt-5 mb-3 pl-m-4 pr-m-4 pl-xl-5 pr-xl-5 bg-white">
+                    <h2>
+                        Read next
+                    </h2>
+                    <div class="readnext-articles">
+                        <div class="readnext-article1 d-flex pt-3">
+                            <img class="rounded-circle" width="48" height="48" src="/img/vishnu-pfp.png" alt="vishnu">
+                            <div class="readnext-info pl-2">
+                                <a class="color-black" href=""><h3 class="mb-0" >4 Free AWS courses on PostgreSQL</h3></a>
+                                <p class="card-text pl-1 text-muted pt-1">Vishnu Chilamakuru - May 13</p>
+                            </div>
+                        </div>
+                        <div class="readnext-article2 d-flex pt-3">
+                            <img class="rounded-circle" width="48" height="48" src="/img/mixtli-pfp.png" alt="mixtli">
+                            <div class="readnext-info pl-2">
+                                <a class="color-black" href=""><h3 class="mb-0" >Understanding Pandas library</h3></a>
+                                <p class="card-text pl-1 text-muted pt-1"> Mixtli Campos - May 26</p>
+                            </div>
+                        </div>
+                        <div class="readnext-article3 d-flex pt-3 pb-3">
+                            <img class="rounded-circle" width="48" height="48" src="/img/lukasz-pfp.png" alt="lukasz">
+                            <div class="readnext-info pl-2">
+                                <a class="color-black" href=""><h3 class="mb-0" >  Migrating to DynamoDB using Parquet and Glue </h3></a>
+                                <p class="card-text pl-1 text-muted pt-1">Łukasz Budnik - May 25</p>
+                            </div>
+                        </div>
+                    </div>
                 </article>
             </section>
             <!--right aside-->
-            <aside class="col-12 col-md-12 col-lg-3">
-                <div class="author-info">
-
+            <aside class="col-12 col-md-12 col-lg-3 mt-3 mt-md-0 mt-xl-0 sticky-top">
+                <div class="profile-background bg-purple color-purple w-100 align-items-center">.</div>
+                <div class="author-info mb-5 pl-3 pr-3 pt-3 pb-3 mb-3 pl-m-4 pr-m-4 pl-xl-5 pr-xl-5 d-flex flex-column bg-white">
+                    <div class="profile-info d-flex flex-column">
+                        <div class="name-pfp d-flex " >
+                            <img class="rounded-circle" width="48" height="48" src="/img/heba-pfp.jpeg" alt="">
+                            <h5 class="ml-2 mt-2" ><b>hebaShakeel</b></h5>
+                        </div>
+                        <p class="poster-title mt-2 text-muted">A Computer Science Student</p>
+                        <div class="follow-button" >
+                            <button class="w-100 bg-blue rounded border-0 text-white">Follow</button>
+                        </div>
+                        <div class="poster-profile-info" >
+                            <div class="location-info mt-3">
+                                <p><small class="text-muted text-uppercase"><b>location</b></small></br>
+                                    India
+                                </p>
+                            </div>
+                            <div class="education-info">
+                                <p><small class="text-muted text-uppercase"><b>Education</b></small></br>
+                                    Bachelor of Technology in Computer Science Engineering
+                                </p>
+                            </div>
+                            <div class="joined-info">
+                                <p><small class="text-muted text-uppercase"><b>Joined</b></small></br>
+                                    August 16, 2020
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="trending-box">
-
+                <div class="more-from-poster bg-white">
+                    <div class="more-from-heba pl-3 pr-3 pt-3 pb-3 pl-m-4 pr-m-4 pl-xl-5 pr-xl-5 d-flex">
+                        <a class="color-black" href=""><h5>More from <b class="text-blue" >hebaShakeel</b></h5></a>
+                    </div>
+                    <div class="posting-cards" >
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Closure set of Attributes and finding Candidate Keys</p>
+                                <p class="text-muted">#database #computerscience</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Normalization and Functional Dependencies in DBMS</p>
+                                <p class="text-muted">#database #computerscience</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Converting ER-Diagram to Relational Model</p>
+                                <p class="text-muted">#database #computerscience</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </aside>        
         </div>
