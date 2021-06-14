@@ -37,13 +37,16 @@
     </header>
     <!--main-->
     <main class="container-fluid main-post bg-gray">
-        <!--left div-->
-        <div class="interactions-container">
-            left div fixed images links heart
-        </div>
         <div class="row">
+            <!--left div-->
+            <aside class="interactions-container col-12 col-md-1 col-xl-1 d-flex flex-md-column">
+                <a><img src="/img/heart-icon.svg" alt="heart" />2</a>
+                <a><img src="/img/unicorn-icon.svg" alt="unicorn" />0</a>
+                <a><img src="/img/bookmark-icon.svg" alt="bookmark" />1</a>
+                <a><img src="/img/three-dots.svg" alt="dots" /></a>
+            </aside>
             <!--section-->
-            <section class="col-12 col-md-12 col-lg-9 m-0 p-0">
+            <section class="col-12 col-md-11 col-xl-8 m-0 p-0">
                 <article class="post-section mb-3 bg-white">
                     <img class="w-100" src="../img/minimal-cover-post.webp" alt="post-pic">
                     <div class="post-text pl-3 pr-3 pl-m-4 pr-m-4 pl-xl-5 pr-xl-5">
@@ -132,8 +135,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="comment-box pt-3 row">
-                        <div class="pfp-collapse-images col-1 pr-md-0 d-flex flex-column">
+                    <div class="comment-box pt-3 d-flex">
+                        <div class="pfp-collapse-images pr-md-0 d-flex mr-2 flex-column">
                             <img class="rounded-circle" width="24px" height="24px" src="../img/comment-person.png" alt="karen">
                             <img class="mt-1" width="24px" height="24px" src="/img/collapsed-icon.svg" alt="collapsed">
                         </div>
@@ -186,7 +189,7 @@
                 </article>
             </section>
             <!--right aside-->
-            <aside class="col-12 col-md-12 col-lg-3 mt-3 mt-md-0 mt-xl-0 sticky-top">
+            <aside class="col-12 col-md-11 col-xl-3 mt-3 mt-md-0 mt-xl-0 offset-md-1 offset-xl-0 author-aside">
                 <div class="profile-background bg-purple color-purple w-100 align-items-center">.</div>
                 <div class="author-info mb-5 pl-3 pr-3 pt-3 pb-3 mb-3 pl-m-4 pr-m-4 pl-xl-5 pr-xl-5 d-flex flex-column bg-white">
                     <div class="profile-info d-flex flex-column">
@@ -217,9 +220,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="more-from-poster bg-white">
-                    <div class="more-from-heba pl-3 pr-3 pt-3 pb-3 pl-m-4 pr-m-4 pl-xl-5 pr-xl-5 d-flex">
-                        <a class="color-black" href=""><h5>More from <b class="text-blue" >hebaShakeel</b></h5></a>
+                <div class="more-from-poster mb-3 bg-white">
+                    <div class="more-from-heba p-3">
+                        <h5><b>More from <a class="color-blue" href="">hebaShakeel</a></b></h5>
                     </div>
                     <div class="posting-cards" >
                         <div class="card">
