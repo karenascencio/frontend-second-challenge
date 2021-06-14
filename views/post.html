@@ -113,34 +113,43 @@
                         <br />
                     </p>
                 </article>
-                <article class="discussion-section">
-                    <div class="discussion-title-button">
-                        <h2></h2>
-                        <button></button>
+                <article class="discussion-section pl-2 pr-2 mt-5">
+                    <div class="discussion-title-button d-flex justify-content-between">
+                        <h2>Discussion (1)</h2>
+                        <button type="button" class="btn btn-outline-secondary">Subscribe</button>
                     </div>
-                    <div class="discussion-comment-box">
-                        <img src="" alt="">
-                        <div class="input-group">
-                            <textarea class="form-control" placeholder="Add to the discussion"></textarea>
-                        </div>
-                        <div class="discussion-toolbar">
-                            <img src="" alt="">
-                            <img src="" alt="">
-                            <img src="" alt="">
-                        </div>
+                    <div class="discussion-comment-box d-flex mt-3">
+                        <img class="rounded-circle mr-2" width="24px" height="24px" src="../img/logged-in-avatar.webp" alt="chava">
                         <div>
-                            <button></button>
-                            <button></button>
+                            <div class="input-group">
+                                <textarea class="form-control" placeholder="Add to the discussion"></textarea>
+                            </div>
+                            <div class="mt-2">
+                                <button type="button">Submit</button>
+                                <button type="button">Preview</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="comment-box row">
-                        <div class="pfp-collapse-images">
-                            <img src="" alt="">
-                            <img src="" alt="">
+                    <div class="comment-box pt-3 row">
+                        <div class="pfp-collapse-images col-1 pr-md-0">
+                            <img class="rounded-circle" width="24px" height="24px" src="../img/comment-person.png" alt="karen">
+                            <img class="mt-1" src="/img/collapsed-icon.svg" alt="collapsed">
                         </div>
-                        <div class="comment-info">
-                            <div>
-                                <p class=""></p>
+                        <div class="comment-info col-11 pl-md-0">
+                            <div class="card">
+                                <div class="card-body pt-1 pl-3">
+                                    <div class="comment-person-info d-flex">
+                                        <p class="card-text"><small class="text-muted"> <b>Sylvia Snowed</b></small></p>
+                                        <p class="card-text pl-1"><small class="text-muted"> June 12</small></p>
+                                    </div>
+                                    <p>
+                                        Was this revelated to you in a dream?
+                                    </p>
+                                </div>
+                                <div class="comment-interaction">
+                                    <button type="button" class="btn btn-light bg-white"><img src="img/heart-icon.svg" alt="#" />18</button>
+                                    <button type="button" class="btn btn-light bg-white"><img src="img/comments-icon.svg" alt="#" />1</button>
+                                </div>
                             </div>
                         </div>
                     </div>
