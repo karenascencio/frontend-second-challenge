@@ -107,14 +107,36 @@
             <!--main cards section-->
             <section class="col-md-8 col-lg-6 d-flex justify-content-between align-items-baseline">
                 <div class="">
-                    <nav>
-                        <div class="nav nav-tabs" id="nav-tab-home" role="tablist">
-                            <a class="nav-link active" id="nav-home-feed" data-toggle="tab" href="#nav-feed" role="tab" aria-controls="nav-feed" aria-selected="true">Feed</a>
-                            <a class="nav-link" id="nav-home-week" data-toggle="tab" href="#nav-week" role="tab" aria-controls="nav-week" aria-selected="false">Week</a>
-                            <a class="nav-link" id="nav-home-month" data-toggle="tab" href="#nav-month" role="tab" aria-controls="nav-month" aria-selected="false">Month</a>
-                            <a class="nav-link" id="nav-home-year" data-toggle="tab" href="#nav-year" role="tab" aria-controls="nav-year" aria-selected="false">Year</a>
-                            <a class="nav-link" id="nav-home-infinity" data-toggle="tab" href="#nav-infinity" role="tab" aria-controls="nav-infinity" aria-selected="false">infinity</a>
-                            <a class="nav-link" id="nav-home-latest" data-toggle="tab" href="#nav-latest" role="tab" aria-controls="nav-latest" aria-selected="false">Latest</a>
+                    <nav class="row align-items-baseline justify-content-between pt-1 mb-2">
+                        <div class="col-2 font-weight-bold pr-0 mr-auto" style="font-size: 18px;">
+                            <p class="mb-0">Posts</p> 
+                        </div>
+                        <!--List Desktop mode-->
+                        <div class="col-10 d-none d-md-block" id="nav-tab-home" role="tablist">
+                            <div class="nav nav-tab justify-content-around align-items-center">
+                                <a class="nav-link nav-format m-0 ml-auto" id="nav-home-feed" data-toggle="tab" href="#nav-feed" role="tab" aria-controls="nav-feed" aria-selected="true">Feed</a>
+                                <a class="nav-link nav-format m-0" id="nav-home-week" data-toggle="tab" href="#nav-week" role="tab" aria-controls="nav-week" aria-selected="false">Week</a>
+                                <a class="nav-link nav-format m-0" id="nav-home-month" data-toggle="tab" href="#nav-month" role="tab" aria-controls="nav-month" aria-selected="false">Month</a>
+                                <a class="nav-link nav-format m-0" id="nav-home-year" data-toggle="tab" href="#nav-year" role="tab" aria-controls="nav-year" aria-selected="false">Year</a>
+                                <a class="nav-link nav-format m-0" id="nav-home-infinity" data-toggle="tab" href="#nav-infinity" role="tab" aria-controls="nav-infinity" aria-selected="false">infinity</a>
+                                <a class="nav-link nav-format m-0" id="nav-home-latest" data-toggle="tab" href="#nav-latest" role="tab" aria-controls="nav-latest" aria-selected="false">Latest</a>
+                            </div>
+                        </div>
+                        <!--Dropdown mobile mode-->
+                        <div class="col-3 d-block d-md-none nav nav-tabs ml-auto" aria-labelledby="dropdownMenuButton" id="nav-tab-home" role="tablist">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Feed
+                                </button>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item nav-link nav-format" id="nav-home-feed" data-toggle="tab" href="#nav-feed" role="tab" aria-controls="nav-feed" aria-selected="true">Feed</a>
+                                    <a class="dropdown-item nav-link nav-format" id="nav-home-week" data-toggle="tab" href="#nav-week" role="tab" aria-controls="nav-week" aria-selected="false">Week</a>
+                                    <a class="dropdown-item nav-link nav-format" id="nav-home-month" data-toggle="tab" href="#nav-month" role="tab" aria-controls="nav-month" aria-selected="false">Month</a>
+                                    <a class="dropdown-item nav-link nav-format" id="nav-home-year" data-toggle="tab" href="#nav-year" role="tab" aria-controls="nav-year" aria-selected="false">Year</a>
+                                    <a class="dropdown-item nav-link nav-format" id="nav-home-infinity" data-toggle="tab" href="#nav-infinity" role="tab" aria-controls="nav-infinity" aria-selected="false">infinity</a>
+                                    <a class="dropdown-item nav-link nav-format" id="nav-home-latest" data-toggle="tab" href="#nav-latest" role="tab" aria-controls="nav-latest" aria-selected="false">Latest</a>
+                                </div>    
+                            </div>    
                         </div>
                     </nav>
                     <div class="tab-content" id="nav-tabContent">
@@ -374,7 +396,7 @@
                 </div>
             </section>
             <!--right aside-->
-            <aside class="col-lg-3 p-0">
+            <aside class="col-lg-3 d-none d-lg-inline p-0">
                 <!--1st card aside CHANGELOG IMG-->
                 <div class="card p-3 mb-3" style="width: 19rem;">
                     <a href="#"><img src="https://res.cloudinary.com/practicaldev/image/fetch/s--wamMWszU--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_350/https://jess.forem.lol/remoteimages/uploads/articles/gr61rcv6d7es2as3hi2t.png" class="card-img-top" alt="..."></a>

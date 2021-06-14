@@ -249,9 +249,23 @@ footer{
 .new-blue{
     background-color: #3B49DF;
     color:white;
-    font-size: 12px;
+    font-size: 10px;
     height: 21.5px;
     width: 30px;
     text-align:center;
     border-radius: 5px;
+}
+
+.nav-format{
+    font-size: 16px;
+    padding: 0 0.7rem;
+    height: 30px;
+    color:black;
+    &:hover{
+        background-color: #E3E6F0;
+        color:#27308B;
+    }
+    &:visited{
+        background-color: red;
+    }
 }
