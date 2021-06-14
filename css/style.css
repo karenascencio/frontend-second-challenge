@@ -40,6 +40,30 @@
   background-color: #64707d;
 }
 
+.color-pink {
+  color: #ffc0cb;
+}
+
+.bg-pink {
+  background-color: #ffc0cb;
+}
+
+.color-salmon {
+  color: #ffd5c0;
+}
+
+.bg-salmon {
+  background-color: #ffd5c0;
+}
+
+.color-purple {
+  color: #d5c0ff;
+}
+
+.bg-purple {
+  background-color: #d5c0ff;
+}
+
 header {
   height: 56px;
   width: 100%;

@@ -12,6 +12,9 @@ $colors:(
     "dark-gray":#d2d6db, //Button, footer
     "very-dark-gray":#b5bdc4, //Hover button
     "darkest-gray": #64707d,
+    "pink": #ffc0cb,
+    "salmon":#ffd5c0,
+    "purple": #d5c0ff,
 );
 
 @each $name, $color in $colors{
