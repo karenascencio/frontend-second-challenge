@@ -8,32 +8,39 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Dev Community</title>
 </head>
-<body class="ggris">
+<body >
     <!--header-->
+    <div class="header-fluid">
     <header class="d-flex align-items-center px-md-2 px-xl-3 bg-white">
         <div class="header-logo d-flex align-items-center">
-            <!-- <img class="burger d-md-none" src="img/burger-icon.svg" alt=""> -->
-
-            <div class="dropdown d-md-none">
-                <button class="btn dropdown-toggle burger-dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="dropdown d-md-none burger-dropdown">
+                <button class="btn dropdown-toggle burger-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu burger-menu" aria-labelledby="dropdownMenuButton" style="position: fixed; transform: none;">
+                    <div class="burger-menu-header d-flex justify-content-between pl-3 pr-1 align-items-center">
+                        <h5 class="m-0">DEV Community</h5>
+                        <img src="img/close-icon.svg" alt="">
+                    </div>
+                    <hr>
                     <nav>
-                        <a href="" class="aside-menu-item dropdown-item"><img src="img/home-icon.svg" alt="">Home</a>
-                        <a href="" class="aside-menu-item dropdown-item"><img src="img/reading-list-icon.svg" alt="">Reading List</a>
-                        <a href="" class="aside-menu-item dropdown-item"><img src="img/listings-icon.svg" alt="">Listings</a>
-                        <a href="" class="aside-menu-item dropdown-item"><img src="img/podcasts-icon.svg" alt="">Podcasts</a>
-                        <a href="" class="aside-menu-item dropdown-item"><img src="img/videos-icon.svg" alt="">Videos</a>
-                        <a href="" class="aside-menu-item dropdown-item"><img src="img/tags-icons.svg" alt="">Tags</a>
-                        <a href="" class="aside-menu-item dropdown-item"><img src="img/code-of-conduct-icon.svg" alt="">Code of Conduct</a>
-                        <a href="" class="aside-menu-item dropdown-item"><img src="img/faq-icon.svg" alt="">FAQ</a>
-                        <a href="" class="aside-menu-item dropdown-item"><img src="img/dev-shop-icon.svg" alt="">DEV Shop</a>
-                        <a href="" class="aside-menu-item dropdown-item"><img src="img/sponsors-icon.svg" alt="">Sponsors</a>
-                        <a href="" class="aside-menu-item dropdown-item"><img src="img/about-icon.svg" alt="">About</a>
-                        <a href="" class="aside-menu-item dropdown-item"><img src="img/privacy-policy-icon.svg" alt="">Privacy Policy</a>
-                        <a href="" class="aside-menu-item dropdown-item"><img src="img/terms-of-use-icon.svg" alt="">Terms of Use</a>
-                        <a href="" class="aside-menu-item dropdown-item"><img src="img/contact-icon.svg" alt="">Contact</a>
-                        <div class="social d-flex justify-content-between">
+                        <div class="main-links">
+                            <a href="" class="aside-menu-item dropdown-item"><img src="img/home-icon.svg" alt="">Home</a>
+                            <a href="" class="aside-menu-item dropdown-item"><img src="img/reading-list-icon.svg" alt="">Reading List</a>
+                            <a href="" class="aside-menu-item dropdown-item"><img src="img/listings-icon.svg" alt="">Listings</a>
+                            <a href="" class="aside-menu-item dropdown-item"><img src="img/podcasts-icon.svg" alt="">Podcasts</a>
+                            <a href="" class="aside-menu-item dropdown-item"><img src="img/videos-icon.svg" alt="">Videos</a>
+                            <a href="" class="aside-menu-item dropdown-item"><img src="img/tags-icons.svg" alt="">Tags</a>
+                            <a href="" class="aside-menu-item dropdown-item"><img src="img/code-of-conduct-icon.svg" alt="">Code of Conduct</a>
+                            <a href="" class="aside-menu-item dropdown-item"><img src="img/faq-icon.svg" alt="">FAQ</a>
+                            <a href="" class="aside-menu-item dropdown-item"><img src="img/dev-shop-icon.svg" alt="">DEV Shop</a>
+                            <a href="" class="aside-menu-item dropdown-item"><img src="img/sponsors-icon.svg" alt="">Sponsors</a>
+                            <a href="" class="aside-menu-item dropdown-item"><img src="img/about-icon.svg" alt="">About</a>
+                            <a href="" class="aside-menu-item dropdown-item"><img src="img/privacy-policy-icon.svg" alt="">Privacy Policy</a>
+                            <a href="" class="aside-menu-item dropdown-item"><img src="img/terms-of-use-icon.svg" alt="">Terms of Use</a>
+                            <a href="" class="aside-menu-item dropdown-item"><img src="img/contact-icon.svg" alt="">Contact</a>
+                        </div>
+                        <hr>
+                        <div class="aside-social d-flex justify-content-between">
                             <a href=""><img src="img/twitter.svg" alt=""></a>
                             <a href=""><img src="img/facebook.svg" alt=""></a>
                             <a href=""><img src="img/github.svg" alt=""></a>
@@ -53,7 +60,6 @@
             <a class="d-md-none" href=""><img src="img/search-icon.svg" alt=""></a>
             <a href=""><img src="img/connect-icon.svg" alt=""></a>
             <a href=""><img src="img/notification-icon.svg" alt=""></a>
-            <!-- <a href=""><img class="rounded-circle avatar" src="img/logged-in-avatar.webp" alt=""></a> -->
             <div class="dropdown">
                 <button class="btn btn-secondary dropdown-toggle rounded-circle mr-md-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 </button>
@@ -73,8 +79,9 @@
             </div>
         </nav>
     </header>
+    </div>
     <!--main-->
-    <main class="container-fluid main-fluid bg-gray p-md-2 p-xl-3">
+    <main class="container-fluid main-fluid bg-gray p-md-2 p-xl-3 d-flex justify-content-center">
         <div class="row main-inner">
             <!--left aside-->
             <aside class="menu-left col-md-4 col-lg-3 d-none d-md-inline">
