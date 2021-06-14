@@ -32,15 +32,7 @@ $colors:(
     background-color: $bg-color;
 }
 
-
-// btn{
-//     @include  button-style(, , -color)
-// }
-
-// btn{
-//     @include  button-style(, , -color)
-// }
-
+// Classes for nav menu //
 .aside-menu-item{
     display: block;
     padding: .5rem;
@@ -61,6 +53,7 @@ $colors:(
         filter: grayscale(1);
     }
 }
+///////////////////////////
 
 header{
     height: 56px;
@@ -69,13 +62,9 @@ header{
     top: 0;
     left: 0;
     z-index: 9999;
-    border: 1px solid black;
+    border-bottom: 1px solid #64707d47;
     padding: 0 map-get($side-padding, "mobile");
     .header-logo{
-        // .burger{
-        //     height: 24px;
-        //     margin: 0 .75rem 0 .25rem ;
-        // }
         .burger-dropdown{
             margin: 0 .75rem 0 .25rem ;
             height: 24px;
@@ -92,8 +81,6 @@ header{
                 height: 40px;
                 width: 50px;
                 margin: 0;
-                // background-color: black;
-
             }
         }
     }
@@ -149,28 +136,6 @@ header{
     padding:map-get($side-padding, "mobile" );
     .main-inner{
         max-width: 1280px;
-        .menu-left{
-            // .aside-menu-item{
-            //     display: block;
-            //     padding: .5rem;
-            //     color: black;
-            //     &:hover{
-            //         color: #323ebe;
-            //         text-decoration: none;
-            //         }
-            //         img{
-            //             margin-right: .5rem;
-            //     }
-    
-            // }
-            // .social{
-            //     margin-top: 1rem;
-            //     padding: 1rem;
-            //     a img{
-            //         filter: grayscale(1);
-            //     }
-            // }
-        }
         .my-tags{
             margin-top: 1.5rem;
             padding: .5rem;
