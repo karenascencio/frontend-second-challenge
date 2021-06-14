@@ -43,26 +43,74 @@
         </div>
         <div class="row">
             <!--section-->
-            <section class="col-12 col-md-12 col-lg-9">
+            <section class="col-12 col-md-12 col-lg-9 m-0 p-0">
                 <article class="post-section">
                     <img class="w-100" src="../img/minimal-cover-post.webp" alt="post-pic">
-                    <h1>
+                    <h1 class="pl-2">
                         Minimal Cover
                     </h1>
-                    <div class="languages-hashtags">
+                    <div class="languages-hashtags pl-2">
                         <span class="bg-pink rounded">#database</span>
                         <span class="bg-salmon rounded">#computerscience</span>
-                        <span class="bg-purple rounded" >#helpme</span>
+                        <span class="bg-purple rounded" >#helpmeimdying</span>
                     </div>
-                    <div class="post-info d-flex">
-                        <img class="poster-pfp w-25 h-25 rounded-circle" src="../img/poster-pfp.jpeg" alt="heba">
-                        <span><b>hebaShakeel</b></span>
+                    <div class="post-info d-flex pt-3 pl-2">
+                        <img class="poster-pfp rounded-circle mr-1" width="32px" src="../img/heba-pfp.jpeg" alt="heba">
+                        <span class="pr-2"><b>hebaShakeel</b></span>
                         <p class="card-text"><small class="text-muted">13 jun. ·1 min read</small></p>
                     </div>
-                    <p>
-                        A minimal cover is a simplified and reduced version of the given set of functional dependencies.
-                        Since it is a reduced version, it is also called as Irreducible set.
-                        It is also called as Canonical Cover.
+                    <p class="pt-3 pl-2 pr-2">
+                        A minimal cover is a simplified and reduced version of the given set of functional dependencies. <br />
+                        Since it is a reduced version, it is also called as <b>Irreducible set</b>. <br />
+                        It is also called as <b>Canonical Cover</b>. <br />
+                        <br />
+                        <b>Steps to Find Minimal Cover:</b> <br />
+                        <br />
+                        <b>1. Split the right-hand attributes of all FDs.</b> <br />
+                        <b>Example</b><br />
+                        A->XY => A->X, A->Y <br />
+                        <br />
+                        <b>2. Remove all redundant FDs.</b><br />
+                        <b>Example</b><br />
+                        { A->B, B->C, A->C }<br />
+                        Here A->C is redundant since it can already be achieved using the Transitivity Property.<br />
+                        <br />
+                        <b>3. Find the Extraneous attribute and remove it.</b><br />
+                        <b>Example</b><br />
+                        AB->C, either A or B or none can be extraneous.<br />
+                        If A closure contains B then B is extraneous and it can be removed.<br />
+                        If B closure contains A then A is extraneous and it can be removed.<br />
+                        <br />
+                        <b>Example 1</b><br />
+                        Minimize {A->C, AC->D, E->H, E->AD}<br />
+                        <br />
+                        <b>Step 1:</b> {A->C, AC->D, E->H, E->A, E->D}<br />
+                        <br />
+                        <b>Step 2:</b> {A->C, AC->D, E->H, E->A}<br />
+                        Here Redundant FD : {E->D}<br />
+                        <br />
+                        <b>Step 3:</b> {AC->D}<br />
+                        {A}+ = {A,C}<br />
+                        Therefore C is extraneous and is removed.<br />
+                        {A->D}<br />
+                        <br />
+                        Minimal Cover = {A->C, A->D, E->H, E->A}<br />
+                        <br />
+                        <b>Example 2</b><br />
+                        Minimize {AB->C, D->E, AB->E, E->C}<br />
+                        <br />
+                        <b>Step 1:</b> {AB->C, D->E, AB->E, E->C}<br />
+                        <br />
+                        <b>Step 2:</b> {D->E, AB->E, E->C}<br />
+                        Here Redundant FD = {AB->C}<br />
+                        <br />
+                        <b>Step 3:</b> {AB->E}<br />
+                        {A}+ = {A}<br />
+                        {B}+ = {B}<br />
+                        There is no extraneous attribute.<br />
+                        <br />
+                        Therefore, Minimal cover = {D->E, AB->E, E->C}<br />
+                        <br />
                     </p>
                 </article>
                 <article class="discussion-section">
