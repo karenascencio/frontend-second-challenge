@@ -40,6 +40,28 @@ $colors:(
 // btn{
 //     @include  button-style(, , -color)
 // }
+
+.aside-menu-item{
+    display: block;
+    padding: .5rem;
+    color: black;
+    &:hover{
+        color: #323ebe;
+        text-decoration: none;
+        }
+        img{
+            margin-right: .5rem;
+    }
+
+}
+.aside-social{
+    margin-top: 1rem;
+    padding: 1rem;
+    a img{
+        filter: grayscale(1);
+    }
+}
+
 header{
     height: 56px;
     width: 100%;
@@ -50,11 +72,19 @@ header{
     border: 1px solid black;
     padding: 0 map-get($side-padding, "mobile");
     .header-logo{
-        .burger{
-            height: 24px;
-
+        // .burger{
+        //     height: 24px;
+        //     margin: 0 .75rem 0 .25rem ;
+        // }
+        .burger-dropdown{
             margin: 0 .75rem 0 .25rem ;
-        }
+            height: 24px;
+            background-image: url("../img/burger-icon.svg");
+            background-repeat: no-repeat;
+            &::after{
+                display: none;
+            }
+                }
         a{
             height: 40px;
             width: 50px;
@@ -92,13 +122,67 @@ header{
                 &::after{
                     display: none;
                 }
-        }
+            }
+            .dropdown-menu{
+                width: 345px;
+                margin-top: .75rem;
+                box-shadow: 3px 3px 0px 4px;
+                h6{
+                    margin: 0;
+                }
+                hr{
+                    margin:.375rem 0;
+                }
+                a{
+                    padding:.75rem;
+                }
+                small{
+                    font-size: 14px;
+                }
+            } 
         }
     }
 }
 
-main{
+.main-fluid{
     margin-top: 56px;
+    padding:map-get($side-padding, "mobile" );
+    .main-inner{
+        max-width: 1280px;
+        .menu-left{
+            // .aside-menu-item{
+            //     display: block;
+            //     padding: .5rem;
+            //     color: black;
+            //     &:hover{
+            //         color: #323ebe;
+            //         text-decoration: none;
+            //         }
+            //         img{
+            //             margin-right: .5rem;
+            //     }
+    
+            // }
+            // .social{
+            //     margin-top: 1rem;
+            //     padding: 1rem;
+            //     a img{
+            //         filter: grayscale(1);
+            //     }
+            // }
+        }
+        .my-tags{
+            margin-top: 1.5rem;
+            padding: .5rem;
+            align-items: center;
+            h3{
+                font-size: 1rem;
+                font-weight: bold;
+                margin: 0;
+            }
+        }
+
+    }
 }
 
 footer{

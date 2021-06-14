@@ -64,6 +64,31 @@
   background-color: #d5c0ff;
 }
 
+.aside-menu-item {
+  display: block;
+  padding: .5rem;
+  color: black;
+}
+
+.aside-menu-item:hover {
+  color: #323ebe;
+  text-decoration: none;
+}
+
+.aside-menu-item img {
+  margin-right: .5rem;
+}
+
+.aside-social {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.aside-social a img {
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+}
+
 header {
   height: 56px;
   width: 100%;
@@ -75,9 +100,15 @@ header {
   padding: 0 0.75rem;
 }
 
-header .header-logo .burger {
-  height: 24px;
+header .header-logo .burger-dropdown {
   margin: 0 .75rem 0 .25rem;
+  height: 24px;
+  background-image: url("../img/burger-icon.svg");
+  background-repeat: no-repeat;
+}
+
+header .header-logo .burger-dropdown::after {
+  display: none;
 }
 
 header .header-logo a {
@@ -115,8 +146,50 @@ header .header-right .dropdown button::after {
   display: none;
 }
 
-main {
+header .header-right .dropdown .dropdown-menu {
+  width: 345px;
+  margin-top: .75rem;
+  -webkit-box-shadow: 3px 3px 0px 4px;
+          box-shadow: 3px 3px 0px 4px;
+}
+
+header .header-right .dropdown .dropdown-menu h6 {
+  margin: 0;
+}
+
+header .header-right .dropdown .dropdown-menu hr {
+  margin: .375rem 0;
+}
+
+header .header-right .dropdown .dropdown-menu a {
+  padding: .75rem;
+}
+
+header .header-right .dropdown .dropdown-menu small {
+  font-size: 14px;
+}
+
+.main-fluid {
   margin-top: 56px;
+  padding: 0.75rem;
+}
+
+.main-fluid .main-inner {
+  max-width: 1280px;
+}
+
+.main-fluid .main-inner .my-tags {
+  margin-top: 1.5rem;
+  padding: .5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-fluid .main-inner .my-tags h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
 }
 
 footer {
