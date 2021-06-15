@@ -251,6 +251,11 @@
   margin: 0;
 }
 
+.go-to-link:hover {
+  color: #3c48df !important;
+  text-decoration: none;
+}
+
 .main-post {
   margin-top: 56px;
 }

@@ -193,6 +193,14 @@ $colors:(
     }
 }
 
+.go-to-link{
+    &:hover{
+        color: map-get($colors , "blue" ) !important ;
+        text-decoration: none;
+    }
+}
+
+
 .main-post{
     margin-top: 56px;
     .interactions-container{
