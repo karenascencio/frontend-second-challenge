@@ -58,6 +58,7 @@ $colors:(
 
 
 .header-fluid{
+    background-color: white;
     height: 56px;
     width: 100%;
     position: fixed;
@@ -209,12 +210,23 @@ $colors:(
         left: 0;
         z-index: 1;
         justify-content: space-evenly;
-        background-color: white;
     }
 }
 
-
-
+.discussion-comment-box{
+    .submit-button{
+        background-color: map-get($colors , "blue" );
+        padding: .5rem;
+        color: white;
+        border:none;
+    }
+    .preview-button{
+        background-color: map-get($colors , "gray" );
+        padding: .5rem;
+        color: map-get($colors , "darkest-gray" );
+        border:none;
+    }
+}
 
 footer{
     padding: 1.25rem;
@@ -309,6 +321,7 @@ footer{
     }
     main{
         
+
     }
 
     footer{
@@ -316,7 +329,10 @@ footer{
     }
 }
 
-
+.author-aside{
+    position: sticky;
+    top:56px;
+}
 
 .gris{
     background-color: #d2d6db;

@@ -98,6 +98,7 @@
 }
 
 .header-fluid {
+  background-color: white;
   height: 56px;
   width: 100%;
   position: fixed;
@@ -268,7 +269,20 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background-color: white;
+}
+
+.discussion-comment-box .submit-button {
+  background-color: #3c48df;
+  padding: .5rem;
+  color: white;
+  border: none;
+}
+
+.discussion-comment-box .preview-button {
+  background-color: #eef0f1;
+  padding: .5rem;
+  color: #64707d;
+  border: none;
 }
 
 footer {
@@ -369,6 +383,12 @@ footer .footer-inner p:nth-of-type(2) {
     position: sticky;
     top: 56px;
   }
+}
+
+.author-aside {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 56px;
 }
 
 .gris {
