@@ -15,6 +15,7 @@ $colors:(
     "pink": #ffc0cb,
     "salmon":#ffd5c0,
     "purple": #d5c0ff,
+    "black": #08090a,
 );
 
 @each $name, $color in $colors{
@@ -32,15 +33,7 @@ $colors:(
     background-color: $bg-color;
 }
 
-
-// btn{
-//     @include  button-style(, , -color)
-// }
-
-// btn{
-//     @include  button-style(, , -color)
-// }
-
+// Classes for nav menu //
 .aside-menu-item{
     display: block;
     padding: .5rem;
@@ -61,116 +54,131 @@ $colors:(
         filter: grayscale(1);
     }
 }
+///////////////////////////
 
-header{
+
+.header-fluid{
     height: 56px;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
-    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #64707d47;
     padding: 0 map-get($side-padding, "mobile");
-    .header-logo{
-        // .burger{
-        //     height: 24px;
-        //     margin: 0 .75rem 0 .25rem ;
-        // }
-        .burger-dropdown{
-            margin: 0 .75rem 0 .25rem ;
-            height: 24px;
-            background-image: url("../img/burger-icon.svg");
-            background-repeat: no-repeat;
-            &::after{
-                display: none;
-            }
+    box-sizing: border-box;
+    header{
+        height: 100%;
+        width: 100%;
+        max-width: 1280px;
+        padding: 0 map-get($side-padding, "mobile");
+        box-sizing: border-box;
+        .header-logo{
+            .burger-dropdown{
+                .burger-button{
+                    margin: 0 .75rem 0 .25rem ;
+                    height: 24px;
+                    background-image: url("../img/burger-icon.svg");
+                    background-repeat: no-repeat;
+                    &::after{
+                        display: none;
+                    }
                 }
-        a{
-            height: 40px;
-            width: 50px;
-            .logo{
+                .burger-menu{
+                    border-radius: 0;
+                    position:fixed !important;
+                    transform:none !important;
+                    margin: 0;
+                    padding: 0;
+                    width: 85vw;
+                    height: 100vh;
+                    top:0px;
+                    left: 0px;
+                    .burger-menu-header{
+                        height: 55px;
+                        img{
+                            height: 24px;
+                        }
+                    }
+                    hr{
+                        margin: 0;
+                    }
+                    .main-links a{
+                        margin: .5rem 1.25rem;
+                    }
+                }
+            }
+    
+            a{
                 height: 40px;
                 width: 50px;
-                margin: 0;
-                // background-color: black;
-
-            }
-        }
-    }
-    .search-bar{
-        max-width:420px;
-        background-color:#f9fafa;
-        border-color: map-get($colors, "darkest-gray");
-    }
-    .header-right{
-        a{
-            
-            img{
-                height: 24px;
-                margin: 0 .75rem;
-            }
-        }
-
-        .dropdown{ 
-            button{
-                width: 32px;
-                height: 32px;
-                margin-left: .75rem ;
-                border: none;
-                background-image: url("../img/logged-in-avatar.webp");
-                background-size: contain;
-                &::after{
-                    display: none;
-                }
-            }
-            .dropdown-menu{
-                width: 345px;
-                margin-top: .75rem;
-                box-shadow: 3px 3px 0px 4px;
-                h6{
+                .logo{
+                    height: 40px;
+                    width: 50px;
                     margin: 0;
                 }
-                hr{
-                    margin:.375rem 0;
+            }
+        }
+        .search-bar{
+            max-width:420px;
+            background-color:#f9fafa;
+            border-color: map-get($colors, "darkest-gray");
+        }
+        .header-right{
+            a{
+                
+                img{
+                    height: 24px;
+                    margin: 0 .75rem;
                 }
-                a{
-                    padding:.75rem;
+            }
+    
+            .dropdown{ 
+                button{
+                    width: 32px;
+                    height: 32px;
+                    margin-left: .75rem ;
+                    border: none;
+                    background-image: url("../img/logged-in-avatar.webp");
+                    background-size: contain;
+                    &::after{
+                        display: none;
+                    }
                 }
-                small{
-                    font-size: 14px;
-                }
-            } 
+                .dropdown-menu{
+                    width: 345px;
+                    margin-top: .75rem;
+                    margin-right: .75rem;
+                    box-shadow: 3px 3px 0px 4px;
+                    h6{
+                        margin: 0;
+                    }
+                    hr{
+                        margin:.375rem 0;
+                    }
+                    a{
+                        padding:.75rem;
+                    }
+                    small{
+                        font-size: 14px;
+                    }
+                } 
+            }
         }
     }
 }
 
+
 .main-fluid{
     margin-top: 56px;
     padding:map-get($side-padding, "mobile" );
+    width: 100vw;
+    box-sizing: border-box;
     .main-inner{
+        margin:0;
         max-width: 1280px;
-        .menu-left{
-            // .aside-menu-item{
-            //     display: block;
-            //     padding: .5rem;
-            //     color: black;
-            //     &:hover{
-            //         color: #323ebe;
-            //         text-decoration: none;
-            //         }
-            //         img{
-            //             margin-right: .5rem;
-            //     }
-    
-            // }
-            // .social{
-            //     margin-top: 1rem;
-            //     padding: 1rem;
-            //     a img{
-            //         filter: grayscale(1);
-            //     }
-            // }
-        }
         .my-tags{
             margin-top: 1.5rem;
             padding: .5rem;
@@ -185,8 +193,25 @@ header{
     }
 }
 
+.main-post{
+    margin-top: 56px;
+    .interactions-container{
+        position: fixed;
+        bottom:0;
+        left: 0;
+        z-index: 1;
+        justify-content: space-evenly;
+        background-color: white;
+    }
+}
+
+
+
+
 footer{
     padding: 1.25rem;
+    width: 100vw;
+    box-sizing: border-box;
     .footer-inner{
         max-width: 768px;
         margin:auto;
@@ -241,8 +266,28 @@ footer{
     header{
 
     }
-    main{
-
+    .main-post{
+        margin-top: 58px;
+        div{
+            .interactions-container{
+            height: 295px;
+            width: 64px;
+            justify-content: space-evenly;
+            align-items: center;
+            position: sticky;
+            top: 80px;
+                a{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    color: map-get($colors , "darkest-gray" )
+                }
+            }
+            .author-aside{
+                position: sticky;
+                top:56px;
+            }
+        }
     }
 
     footer{
@@ -255,13 +300,15 @@ footer{
 
     }
     main{
-
+        
     }
 
     footer{
 
     }
 }
+
+
 
 .gris{
     background-color: #d2d6db;

@@ -10,152 +10,285 @@
 </head>
 <body>
     <!--header-->
-    <header class="d-flex align-items-center px-md-2 px-xl-3 bg-white">
-        <div class="header-logo">
-            <img class="burger d-md-none" src="../img/burger-icon.svg" alt="">
-            <a href=""><svg width="50" height="40" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="50" height="40" rx="3" style="fill: black;"></rect><path d="M19.099 23.508c0 1.31-.423 2.388-1.27 3.234-.838.839-1.942 1.258-3.312 1.258h-4.403V12.277h4.492c1.31 0 2.385.423 3.224 1.27.846.838 1.269 1.912 1.269 3.223v6.738zm-2.808 0V16.77c0-.562-.187-.981-.562-1.258-.374-.285-.748-.427-1.122-.427h-1.685v10.107h1.684c.375 0 .75-.138 1.123-.415.375-.285.562-.708.562-1.27zM28.185 28h-5.896c-.562 0-1.03-.187-1.404-.561-.375-.375-.562-.843-.562-1.404V14.243c0-.562.187-1.03.562-1.404.374-.375.842-.562 1.404-.562h5.896v2.808H23.13v3.65h3.088v2.808h-3.088v3.65h5.054V28zm7.12 0c-.936 0-1.684-.655-2.246-1.965l-3.65-13.758h3.089l2.807 10.804 2.808-10.804H41.2l-3.65 13.758C36.99 27.345 36.241 28 35.305 28z" style="fill: white;"></path></svg></a>
-        </div>
-        <input type="text" class="form-control d-none d-md-inline mx-3 search-bar" placeholder="Search...">
-        <nav class="header-right d-flex align-items-center ml-auto">
-            <button type="button" class="btn btn-primary bg-blue text-white border-0 text-nowrap d-none d-md-inline mr-2">Create Post</button>
-
-            <a class="d-md-none" href=""><img src="../img/search-icon.svg" alt=""></a>
-            <a href=""><img src="../img/connect-icon.svg" alt=""></a>
-            <a href=""><img src="../img/notification-icon.svg" alt=""></a>
-            <!-- <a href=""><img class="rounded-circle avatar" src="../img/logged-in-avatar.webp" alt=""></a> -->
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle rounded-circle mr-md-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+    <div class="header-fluid">
+        <header class="d-flex align-items-center px-md-2 px-xl-3 bg-white">
+            <div class="header-logo d-flex align-items-center">
+                <div class="dropdown d-md-none burger-dropdown">
+                    <button class="btn dropdown-toggle burger-button" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </button>
+                    <div class="dropdown-menu burger-menu" aria-labelledby="dropdownMenuButton" style="position: fixed; transform: none;">
+                        <div class="burger-menu-header d-flex justify-content-between pl-3 pr-1 align-items-center">
+                            <h5 class="m-0">DEV Community</h5>
+                            <img src="../img/close-icon.svg" alt="">
+                        </div>
+                        <hr>
+                        <nav>
+                            <div class="main-links">
+                                <a href="" class="aside-menu-item dropdown-item"><img src="../img/home-icon.svg" alt="">Home</a>
+                                <a href="" class="aside-menu-item dropdown-item"><img src="../img/reading-list-icon.svg" alt="">Reading List</a>
+                                <a href="" class="aside-menu-item dropdown-item"><img src="../img/listings-icon.svg" alt="">Listings</a>
+                                <a href="" class="aside-menu-item dropdown-item"><img src="../img/podcasts-icon.svg" alt="">Podcasts</a>
+                                <a href="" class="aside-menu-item dropdown-item"><img src="../img/videos-icon.svg" alt="">Videos</a>
+                                <a href="" class="aside-menu-item dropdown-item"><img src="../img/tags-icons.svg" alt="">Tags</a>
+                                <a href="" class="aside-menu-item dropdown-item"><img src="../img/code-of-conduct-icon.svg" alt="">Code of Conduct</a>
+                                <a href="" class="aside-menu-item dropdown-item"><img src="../img/faq-icon.svg" alt="">FAQ</a>
+                                <a href="" class="aside-menu-item dropdown-item"><img src="../img/dev-shop-icon.svg" alt="">DEV Shop</a>
+                                <a href="" class="aside-menu-item dropdown-item"><img src="../img/sponsors-icon.svg" alt="">Sponsors</a>
+                                <a href="" class="aside-menu-item dropdown-item"><img src="../img/about-icon.svg" alt="">About</a>
+                                <a href="" class="aside-menu-item dropdown-item"><img src="../img/privacy-policy-icon.svg" alt="">Privacy Policy</a>
+                                <a href="" class="aside-menu-item dropdown-item"><img src="../img/terms-of-use-icon.svg" alt="">Terms of Use</a>
+                                <a href="" class="aside-menu-item dropdown-item"><img src="../img/contact-icon.svg" alt="">Contact</a>
+                            </div>
+                            <hr>
+                            <div class="aside-social d-flex justify-content-between">
+                                <a href=""><img src="../img/twitter.svg" alt=""></a>
+                                <a href=""><img src="../img/facebook.svg" alt=""></a>
+                                <a href=""><img src="../img/github.svg" alt=""></a>
+                                <a href=""><img src="../img/instagram.svg" alt=""></a>
+                                <a href=""><img src="../img/twitch.svg" alt=""></a></div>
+                        </nav>
+                    </div>
+                  </div>
+    
+    
+                <a href=""><svg width="50" height="40" viewBox="0 0 50 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="50" height="40" rx="3" style="fill: black;"></rect><path d="M19.099 23.508c0 1.31-.423 2.388-1.27 3.234-.838.839-1.942 1.258-3.312 1.258h-4.403V12.277h4.492c1.31 0 2.385.423 3.224 1.27.846.838 1.269 1.912 1.269 3.223v6.738zm-2.808 0V16.77c0-.562-.187-.981-.562-1.258-.374-.285-.748-.427-1.122-.427h-1.685v10.107h1.684c.375 0 .75-.138 1.123-.415.375-.285.562-.708.562-1.27zM28.185 28h-5.896c-.562 0-1.03-.187-1.404-.561-.375-.375-.562-.843-.562-1.404V14.243c0-.562.187-1.03.562-1.404.374-.375.842-.562 1.404-.562h5.896v2.808H23.13v3.65h3.088v2.808h-3.088v3.65h5.054V28zm7.12 0c-.936 0-1.684-.655-2.246-1.965l-3.65-13.758h3.089l2.807 10.804 2.808-10.804H41.2l-3.65 13.758C36.99 27.345 36.241 28 35.305 28z" style="fill: white;"></path></svg></a>
             </div>
-
-        </nav>
-    </header>
-    <!--main-->
-    <main class="container">
-        <!--left div-->
-        <div class="interactions-container">
-            left div fixed images links heart
+            <input type="text" class="form-control d-none d-md-inline mx-3 search-bar" placeholder="Search...">
+            <nav class="header-right d-flex align-items-center ml-auto">
+                <button type="button" class="btn btn-primary bg-blue text-white border-0 text-nowrap d-none d-md-inline mr-2">Create Post</button>
+    
+                <a class="d-md-none" href=""><img src="../img/search-icon.svg" alt=""></a>
+                <a href=""><img src="../img/connect-icon.svg" alt=""></a>
+                <a href=""><img src="../img/notification-icon.svg" alt=""></a>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle rounded-circle mr-md-2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">
+                        <h6>Chava Jimenez</h6>
+                        <small class="color-darkest-gray">@chavus</small>
+                    </a>
+                    <hr>
+                    <a class="dropdown-item" href="#">Dashboard</a>
+                    <a class="dropdown-item" href="#">Create Post</a>
+                    <a class="dropdown-item" href="#">Reading List</a>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <hr>
+                    <a class="dropdown-item" href="#">Sign Out</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
         </div>
+    <!--main-->
+    <main class="container-fluid main-post bg-gray">
         <div class="row">
+            <!--left div-->
+            <aside class="interactions-container col-12 col-md-1 col-xl-1 d-flex flex-md-column">
+                <a><img src="../img/heart-icon.svg" alt="heart" />2</a>
+                <a><img src="../img/unicorn-icon.svg" alt="unicorn" />0</a>
+                <a><img src="../img/bookmark-icon.svg" alt="bookmark" />1</a>
+                <a><img src="../img/three-dots.svg" alt="dots" /></a>
+            </aside>
             <!--section-->
-            <section class="col-12 col-md-12 col-lg-9 m-0 p-0">
-                <article class="post-section">
+            <section class="col-12 col-md-11 col-xl-8 m-0 p-0">
+                <article class="post-section mb-3 bg-white">
                     <img class="w-100" src="../img/minimal-cover-post.webp" alt="post-pic">
-                    <h1 class="pl-2">
-                        Minimal Cover
-                    </h1>
-                    <div class="languages-hashtags pl-2">
-                        <span class="bg-pink rounded">#database</span>
-                        <span class="bg-salmon rounded">#computerscience</span>
-                        <span class="bg-purple rounded" >#helpmeimdying</span>
+                    <div class="post-text pl-3 pr-3 pl-m-4 pr-m-4 pl-xl-5 pr-xl-5">
+                        <h1 class="pt-3">
+                            Minimal Cover
+                        </h1>
+                        <div class="languages-hashtags">
+                            <span class="bg-pink rounded">#database</span>
+                            <span class="bg-salmon rounded">#computerscience</span>
+                            <span class="bg-purple rounded" >#helpmeimdying</span>
+                        </div>
+                        <div class="post-info d-flex pt-3">
+                            <img class="poster-pfp rounded-circle mr-1" width="32px" src="../img/heba-pfp.jpeg" alt="heba">
+                            <span class="pr-2 mt-1"><b>hebaShakeel</b></span>
+                            <p class="card-text"><small class="text-muted">13 jun. ·1 min read</small></p>
+                        </div>
+                        <p class="pt-3 pb-3">
+                            A minimal cover is a simplified and reduced version of the given set of functional dependencies. <br />
+                            Since it is a reduced version, it is also called as <b>Irreducible set</b>. <br />
+                            It is also called as <b>Canonical Cover</b>. <br />
+                            <br />
+                            <b>Steps to Find Minimal Cover:</b> <br />
+                            <br />
+                            <b>1. Split the right-hand attributes of all FDs.</b> <br />
+                            <b>Example</b><br />
+                            A->XY => A->X, A->Y <br />
+                            <br />
+                            <b>2. Remove all redundant FDs.</b><br />
+                            <b>Example</b><br />
+                            { A->B, B->C, A->C }<br />
+                            Here A->C is redundant since it can already be achieved using the Transitivity Property.<br />
+                            <br />
+                            <b>3. Find the Extraneous attribute and remove it.</b><br />
+                            <b>Example</b><br />
+                            AB->C, either A or B or none can be extraneous.<br />
+                            If A closure contains B then B is extraneous and it can be removed.<br />
+                            If B closure contains A then A is extraneous and it can be removed.<br />
+                            <br />
+                            <b>Example 1</b><br />
+                            Minimize {A->C, AC->D, E->H, E->AD}<br />
+                            <br />
+                            <b>Step 1:</b> {A->C, AC->D, E->H, E->A, E->D}<br />
+                            <br />
+                            <b>Step 2:</b> {A->C, AC->D, E->H, E->A}<br />
+                            Here Redundant FD : {E->D}<br />
+                            <br />
+                            <b>Step 3:</b> {AC->D}<br />
+                            {A}+ = {A,C}<br />
+                            Therefore C is extraneous and is removed.<br />
+                            {A->D}<br />
+                            <br />
+                            Minimal Cover = {A->C, A->D, E->H, E->A}<br />
+                            <br />
+                            <b>Example 2</b><br />
+                            Minimize {AB->C, D->E, AB->E, E->C}<br />
+                            <br />
+                            <b>Step 1:</b> {AB->C, D->E, AB->E, E->C}<br />
+                            <br />
+                            <b>Step 2:</b> {D->E, AB->E, E->C}<br />
+                            Here Redundant FD = {AB->C}<br />
+                            <br />
+                            <b>Step 3:</b> {AB->E}<br />
+                            {A}+ = {A}<br />
+                            {B}+ = {B}<br />
+                            There is no extraneous attribute.<br />
+                            <br />
+                            Therefore, Minimal cover = {D->E, AB->E, E->C}<br />
+                            <br />
+                        </p>
                     </div>
-                    <div class="post-info d-flex pt-3 pl-2">
-                        <img class="poster-pfp rounded-circle mr-1" width="32px" src="../img/heba-pfp.jpeg" alt="heba">
-                        <span class="pr-2"><b>hebaShakeel</b></span>
-                        <p class="card-text"><small class="text-muted">13 jun. ·1 min read</small></p>
-                    </div>
-                    <p class="pt-3 pl-2 pr-2">
-                        A minimal cover is a simplified and reduced version of the given set of functional dependencies. <br />
-                        Since it is a reduced version, it is also called as <b>Irreducible set</b>. <br />
-                        It is also called as <b>Canonical Cover</b>. <br />
-                        <br />
-                        <b>Steps to Find Minimal Cover:</b> <br />
-                        <br />
-                        <b>1. Split the right-hand attributes of all FDs.</b> <br />
-                        <b>Example</b><br />
-                        A->XY => A->X, A->Y <br />
-                        <br />
-                        <b>2. Remove all redundant FDs.</b><br />
-                        <b>Example</b><br />
-                        { A->B, B->C, A->C }<br />
-                        Here A->C is redundant since it can already be achieved using the Transitivity Property.<br />
-                        <br />
-                        <b>3. Find the Extraneous attribute and remove it.</b><br />
-                        <b>Example</b><br />
-                        AB->C, either A or B or none can be extraneous.<br />
-                        If A closure contains B then B is extraneous and it can be removed.<br />
-                        If B closure contains A then A is extraneous and it can be removed.<br />
-                        <br />
-                        <b>Example 1</b><br />
-                        Minimize {A->C, AC->D, E->H, E->AD}<br />
-                        <br />
-                        <b>Step 1:</b> {A->C, AC->D, E->H, E->A, E->D}<br />
-                        <br />
-                        <b>Step 2:</b> {A->C, AC->D, E->H, E->A}<br />
-                        Here Redundant FD : {E->D}<br />
-                        <br />
-                        <b>Step 3:</b> {AC->D}<br />
-                        {A}+ = {A,C}<br />
-                        Therefore C is extraneous and is removed.<br />
-                        {A->D}<br />
-                        <br />
-                        Minimal Cover = {A->C, A->D, E->H, E->A}<br />
-                        <br />
-                        <b>Example 2</b><br />
-                        Minimize {AB->C, D->E, AB->E, E->C}<br />
-                        <br />
-                        <b>Step 1:</b> {AB->C, D->E, AB->E, E->C}<br />
-                        <br />
-                        <b>Step 2:</b> {D->E, AB->E, E->C}<br />
-                        Here Redundant FD = {AB->C}<br />
-                        <br />
-                        <b>Step 3:</b> {AB->E}<br />
-                        {A}+ = {A}<br />
-                        {B}+ = {B}<br />
-                        There is no extraneous attribute.<br />
-                        <br />
-                        Therefore, Minimal cover = {D->E, AB->E, E->C}<br />
-                        <br />
-                    </p>
                 </article>
-                <article class="discussion-section">
-                    <div class="discussion-title-button">
-                        <h2></h2>
-                        <button></button>
+                <article class="discussion-section pl-3 pr-3 pt-3 pb-3 mt-5 pl-m-4 pr-m-4 pl-xl-5 pr-xl-5 bg-white rounded">
+                    <div class="discussion-title-button d-flex justify-content-between">
+                        <h2>Discussion (1)</h2>
+                        <button type="button" class="btn btn-outline-secondary">Subscribe</button>
                     </div>
-                    <div class="discussion-comment-box">
-                        <img src="" alt="">
-                        <div class="input-group">
-                            <textarea class="form-control" placeholder="Add to the discussion"></textarea>
-                        </div>
-                        <div class="discussion-toolbar">
-                            <img src="" alt="">
-                            <img src="" alt="">
-                            <img src="" alt="">
-                        </div>
+                    <div class="discussion-comment-box d-flex mt-3">
+                        <img class="rounded-circle mr-2" width="24px" height="24px" src="../img/logged-in-avatar.webp" alt="chava">
                         <div>
-                            <button></button>
-                            <button></button>
+                            <div class="input-group">
+                                <textarea class="form-control" placeholder="Add to the discussion"></textarea>
+                            </div>
+                            <div class="mt-2">
+                                <button type="button">Submit</button>
+                                <button type="button">Preview</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="comment-box row">
-                        <div class="pfp-collapse-images">
-                            <img src="" alt="">
-                            <img src="" alt="">
+                    <div class="comment-box pt-3 d-flex">
+                        <div class="pfp-collapse-images pr-md-0 d-flex mr-2 flex-column">
+                            <img class="rounded-circle" width="24px" height="24px" src="../img/comment-person.png" alt="karen">
+                            <img class="mt-1" width="24px" height="24px" src="../img/collapsed-icon.svg" alt="collapsed">
                         </div>
-                        <div class="comment-info">
-                            <div>
-                                <p class=""></p>
+                        <div class="comment-info col-11 pl-md-0">
+                            <div class="card">
+                                <div class="card-body pt-1">
+                                    <div class="comment-person-info d-flex">
+                                        <p class="card-text"><small class="text-muted"> <b>Sylvia Snowed</b></small></p>
+                                        <p class="card-text pl-1"><small class="text-muted"> June 12</small></p>
+                                    </div>
+                                    <p>
+                                        Was this revelated to you in a dream?
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="comment-interaction">
+                                <button type="button" class="btn btn-light bg-white"><img src="../img/heart-icon.svg" alt="heart" />2 likes</button>
+                                <button type="button" class="btn btn-light bg-white"><img src="../img/comments-icon.svg" alt="comment" />0</button>
                             </div>
                         </div>
                     </div>
                 </article>
-                <article class="readnext-section">
-
+                <article class="readnext-section pl-3 pr-3 pt-3 pb-3 mt-5 mb-3 pl-m-4 pr-m-4 pl-xl-5 pr-xl-5 bg-white">
+                    <h2>
+                        Read next
+                    </h2>
+                    <div class="readnext-articles">
+                        <div class="readnext-article1 d-flex pt-3">
+                            <img class="rounded-circle" width="48" height="48" src="../img/vishnu-pfp.png" alt="vishnu">
+                            <div class="readnext-info pl-2">
+                                <a class="color-black" href=""><h3 class="mb-0" >4 Free AWS courses on PostgreSQL</h3></a>
+                                <p class="card-text pl-1 text-muted pt-1">Vishnu Chilamakuru - May 13</p>
+                            </div>
+                        </div>
+                        <div class="readnext-article2 d-flex pt-3">
+                            <img class="rounded-circle" width="48" height="48" src="../img/mixtli-pfp.png" alt="mixtli">
+                            <div class="readnext-info pl-2">
+                                <a class="color-black" href=""><h3 class="mb-0" >Understanding Pandas library</h3></a>
+                                <p class="card-text pl-1 text-muted pt-1"> Mixtli Campos - May 26</p>
+                            </div>
+                        </div>
+                        <div class="readnext-article3 d-flex pt-3 pb-3">
+                            <img class="rounded-circle" width="48" height="48" src="../img/lukasz-pfp.png" alt="lukasz">
+                            <div class="readnext-info pl-2">
+                                <a class="color-black" href=""><h3 class="mb-0" >  Migrating to DynamoDB using Parquet and Glue </h3></a>
+                                <p class="card-text pl-1 text-muted pt-1">Łukasz Budnik - May 25</p>
+                            </div>
+                        </div>
+                    </div>
                 </article>
             </section>
             <!--right aside-->
-            <aside class="col-12 col-md-12 col-lg-3">
-                <div class="author-info">
-
+            <aside class="col-12 col-md-11 col-xl-3 mt-3 mt-md-0 mt-xl-0 offset-md-1 offset-xl-0 author-aside">
+                <div class="profile-background bg-purple color-purple w-100 align-items-center">.</div>
+                <div class="author-info mb-5 pl-3 pr-3 pt-3 pb-3 mb-3 pl-m-4 pr-m-4 pl-xl-5 pr-xl-5 d-flex flex-column bg-white">
+                    <div class="profile-info d-flex flex-column">
+                        <div class="name-pfp d-flex " >
+                            <img class="rounded-circle" width="48" height="48" src="../img/heba-pfp.jpeg" alt="">
+                            <h5 class="ml-2 mt-2" ><b>hebaShakeel</b></h5>
+                        </div>
+                        <p class="poster-title mt-2 text-muted">A Computer Science Student</p>
+                        <div class="follow-button" >
+                            <button class="w-100 bg-blue rounded border-0 text-white">Follow</button>
+                        </div>
+                        <div class="poster-profile-info" >
+                            <div class="location-info mt-3">
+                                <p><small class="text-muted text-uppercase"><b>location</b></small></br>
+                                    India
+                                </p>
+                            </div>
+                            <div class="education-info">
+                                <p><small class="text-muted text-uppercase"><b>Education</b></small></br>
+                                    Bachelor of Technology in Computer Science Engineering
+                                </p>
+                            </div>
+                            <div class="joined-info">
+                                <p><small class="text-muted text-uppercase"><b>Joined</b></small></br>
+                                    August 16, 2020
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="trending-box">
-
+                <div class="more-from-poster mb-3 bg-white">
+                    <div class="more-from-heba p-3">
+                        <h5><b>More from <a class="color-blue" href="">hebaShakeel</a></b></h5>
+                    </div>
+                    <div class="posting-cards" >
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Closure set of Attributes and finding Candidate Keys</p>
+                                <p class="text-muted">#database #computerscience</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Normalization and Functional Dependencies in DBMS</p>
+                                <p class="text-muted">#database #computerscience</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <p>Converting ER-Diagram to Relational Model</p>
+                                <p class="text-muted">#database #computerscience</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </aside>        
         </div>
