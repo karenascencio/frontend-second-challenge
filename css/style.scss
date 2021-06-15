@@ -210,6 +210,7 @@ $colors:(
         left: 0;
         z-index: 1;
         justify-content: space-evenly;
+        background-color: white;
     }
 }
 
@@ -296,6 +297,7 @@ footer{
             align-items: center;
             position: sticky;
             top: 80px;
+            background-color: #eef0f1;
                 a{
                     display: flex;
                     flex-direction: column;

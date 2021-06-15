@@ -269,6 +269,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  background-color: white;
 }
 
 .discussion-comment-box .submit-button {
@@ -364,6 +365,7 @@ footer .footer-inner p:nth-of-type(2) {
     position: -webkit-sticky;
     position: sticky;
     top: 80px;
+    background-color: #eef0f1;
   }
   .main-post div .interactions-container a {
     display: -webkit-box;
